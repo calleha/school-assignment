@@ -7,7 +7,7 @@ public abstract class Plant implements Waterable { // occurrence of interface im
         this.height = height;
     }
 
-    public String getName() {return name;}
+    public String getName() {return name;} // occurrence of encapsulation
     public double getHeight() {return height;}
 
     @Override
