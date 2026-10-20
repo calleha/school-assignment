@@ -1,0 +1,8 @@
+* Plant Hotel
+This is a simple program for a school assignment, which lets the user input the name of a plant and prints the amount of watering needed.
+** How to build and run
+A JDK with javac is required.
+#+begin_src
+$ javac *.java
+$ java Main
+#+end_src
