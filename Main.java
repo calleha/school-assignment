@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Plant[] plants = {
-            new Cactus("Igge", 0.2), // occurrence of polymorphism
+            new Cactus("Igge", 0.2),
             new Palm("Laura", 5),
             new Carnivorous("Meatloaf", 0.7),
             new Palm("Olof", 1)
@@ -43,7 +43,7 @@ public class Main {
                     continue;
                 }
 
-                Waterable w = plant;
+                Waterable w = plant; // occurrence of polymorphism: subclass determines method
                 System.out.printf("Plant %s needs %.2f liters of %s per day.%n",
                                   plant.getName(), w.calculateLiquidAmount(), w.getLiquidType().name().replaceAll("_"," ").toLowerCase());
             }
