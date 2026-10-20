@@ -45,7 +45,7 @@ public class Main {
 
                 Waterable w = plant;
                 System.out.printf("Plant %s needs %.2f liters of %s per day.%n",
-                                  plant.getName(), w.calculateLiquidAmount(), w.getLiquidType());
+                                  plant.getName(), w.calculateLiquidAmount(), w.getLiquidType().name().replaceAll("_"," ").toLowerCase());
             }
         }
     }
