@@ -44,7 +44,9 @@ public class Main {
                 }
 
                 Waterable w = plant; // occurrence of polymorphism: subclass determines method
-                System.out.printf("Plant %s needs %.2f liters of %s per day.%n",
+                System.out.printf("%s %s needs %.2f liters of %s per day.%n",
+				  w.getPlantType().name().substring(0,1) +
+				  w.getPlantType().name().substring(1).replaceAll("_"," ").toLowerCase(),
                                   plant.getName(), w.calculateLiquidAmount(),
 				  w.getLiquidType().name().replaceAll("_"," ").toLowerCase());
             }

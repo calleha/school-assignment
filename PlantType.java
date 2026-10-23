@@ -1,0 +1,1 @@
+public enum PlantType {PALMTREE, CACTUS, CARNIVOROUS_PLANT}
